@@ -24,7 +24,7 @@ function App() {
     const items = cart.filter(item => {
       return item.id !== remItem;
     });
-    setCart([...items]);
+    setCart(items);
   };
 
   return (
