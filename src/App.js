@@ -14,7 +14,7 @@ import { CartContext } from "./contexts/CartContext.js";
 
 function App() {
   const [products] = useState(data);
-  const [cart, setCart] = useLocalStorage("Cart", []);
+  const [cart, setCart] = useState([]);
 
   const addItem = item => {
     setCart([...cart, item]);
